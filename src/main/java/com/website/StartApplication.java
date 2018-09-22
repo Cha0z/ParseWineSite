@@ -12,9 +12,11 @@ public class StartApplication {
 
         Wrapper wrapperComponent = new Wrapper(linkOfWebSite);
 
-        List<String> linksOfAllProductFromSection = wrapperComponent.getAllLinkFromSection();
+    //    List<String> linksOfAllProductFromSection = wrapperComponent.getAllLinkFromSection();
 
         List<Map<String,String>> informationAboutAllProduct = wrapperComponent.getInformationAboutAllProduct();
+
+        System.out.println(informationAboutAllProduct.size());
 
 
 

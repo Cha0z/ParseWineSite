@@ -5,6 +5,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,10 +16,11 @@ public class ProductParser {
     private Document allDataFromPage;
 
     private List<String> linkContainer;
-    private List<Map<String,String>> allInforationAboutProduct;
+    private List<Map<String,String>> allInformationAboutProduct;
 
 
     public ProductParser(List<String> productsLinks) {
+        this.allInformationAboutProduct = new ArrayList<>();
         this.linkContainer = productsLinks;
 
 
@@ -29,10 +31,11 @@ public class ProductParser {
 
         for(String url:linkContainer){
             goToNextProduct(url);
-            allInforationAboutProduct.add(getInformationAboutCurrentProduct());
+            allInformationAboutProduct.add(getInformationAboutCurrentProduct());
+
         }
 
-        return allInforationAboutProduct;
+        return allInformationAboutProduct;
     }
 
     private Map<String, String> getInformationAboutCurrentProduct() {
@@ -72,6 +75,12 @@ public class ProductParser {
                 }
             }
         }
+
+        if (!productInformationContainer.containsKey("region")){
+            productInformationContainer.put("region","unknown");
+        }
+
+        System.out.println(productInformationContainer);
         return productInformationContainer;
     }
 

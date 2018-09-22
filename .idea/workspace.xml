@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a482b91-db58-4592-a036-0b29f576c80a" name="Default Changelist" comment="Add wrapper, ChangeMainPageParser for geting only one link">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/datasource/ProductCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/website/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/StartApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/entity/FeautureContainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/entity/ProductFeature.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/StartApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/StartApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/Writer/DocumentWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/Writer/DocumentWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/entity/FeautureContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/entity/ProductFeature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/parsers/MainPageParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/parsers/MainPageParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/parsers/ProductParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/parsers/ProductParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/parsers/SectionPageParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/parsers/SectionPageParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/wraper/Wrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/wraper/Wrapper.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,24 +72,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="java" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="1381" />
+          <entry key="java" value="1447" />
           <entry key="txt" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1381" />
+          <entry key="JAVA" value="1447" />
           <entry key="PLAIN_TEXT" value="70" />
         </counts>
       </usages-collector>
@@ -167,11 +173,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+            <state relative-caret-position="149">
+              <caret line="79" column="64" selection-start-line="79" selection-start-column="64" selection-end-line="79" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4056#4057#0" expanded="true" />
@@ -181,14 +187,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/website/StartApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="302">
+              <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/datasource/ProductCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -249,9 +264,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/website/wraper/Wraper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/MainPageParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/SectionPageParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/datasource/ProductCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/StartApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductParser.java" />
       </list>
     </option>
   </component>
@@ -331,7 +347,37 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParseSite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="parsers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParseSite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
               <item name="wraper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParseSite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="writer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -343,7 +389,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537613148106" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537614155241" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -416,7 +462,7 @@
       <updated>1537454742223</updated>
       <workItem from="1537454746288" duration="3118000" />
       <workItem from="1537466957432" duration="53567000" />
-      <workItem from="1537568069661" duration="12467000" />
+      <workItem from="1537568069661" duration="13103000" />
     </task>
     <task id="LOCAL-00001" summary="Working parser">
       <created>1537558459485</created>
@@ -429,13 +475,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69152000" />
+    <option name="totallyTimeSpent" value="69788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20268457" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20268457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -443,7 +489,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.64697987" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33557048" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29261744" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -612,18 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4056#4057#0" expanded="true" />
-            <element signature="e#4136#4137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -636,12 +670,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/datasource/ProductCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/website/StartApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="302">
+          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="79" column="64" selection-start-line="79" selection-start-column="64" selection-end-line="79" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4056#4057#0" expanded="true" />
+            <element signature="e#4136#4137#0" expanded="true" />
           </folding>
         </state>
       </provider>
