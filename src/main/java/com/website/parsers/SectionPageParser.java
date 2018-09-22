@@ -37,7 +37,7 @@ public class SectionPageParser {
                 String linkToProduct = currentElement.attr("abs:href");
                 productLinks.add(linkToProduct);
             }
-//!!!!!!
+//!Для информации о выводе
             System.out.println(currentPageOfSections);
 
             if (currentPageOfSections < numberOfPagesInSections) {

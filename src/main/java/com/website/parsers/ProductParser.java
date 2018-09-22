@@ -56,22 +56,22 @@ public class ProductParser {
                 StringBuffer currentLine = new StringBuffer(currentElement.text());
 
                 if (currentLine.toString().contains("Сладость:")) {
-                    productInformationContainer.put("sweetness", currentLine.substring(currentLine.indexOf(" ")));
+                    productInformationContainer.put("sweetness", currentLine.substring(currentLine.indexOf(" ")).trim());
                 }
                 if (currentLine.toString().contains("Тип:")) {
-                    productInformationContainer.put("type", currentLine.substring(currentLine.indexOf(" ")));
+                    productInformationContainer.put("type", currentLine.substring(currentLine.indexOf(" ")).trim());
                 }
                 if (currentLine.toString().contains("Страна:")) {
-                    productInformationContainer.put("country", currentLine.substring(currentLine.indexOf(" ")));
+                    productInformationContainer.put("country", currentLine.substring(currentLine.indexOf(" ")).trim());
                 }
                 if (currentLine.toString().contains("Производитель:")) {
-                    productInformationContainer.put("brand", currentLine.substring(currentLine.indexOf(" ")));
+                    productInformationContainer.put("brand", currentLine.substring(currentLine.indexOf(" ")).trim());
                 }
                 if (currentLine.toString().contains("Объём:")) {
-                    productInformationContainer.put("volume", currentLine.substring(currentLine.indexOf(" ")));
+                    productInformationContainer.put("volume", currentLine.substring(currentLine.indexOf(" ")).trim());
                 }
                 if (currentLine.toString().contains("Регион:")) {
-                    productInformationContainer.put("region", currentLine.substring(currentLine.indexOf(" ")));
+                    productInformationContainer.put("region", currentLine.substring(currentLine.indexOf(" ")).trim());
                 }
             }
         }

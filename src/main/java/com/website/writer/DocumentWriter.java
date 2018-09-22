@@ -13,12 +13,22 @@ public class DocumentWriter {
     public void write(List<Product> list) {
         try (BufferedWriter br = new BufferedWriter(new FileWriter("file.csv"))) {
             for (Product currentProduct : list) {
-                br.write(currentProduct.getTitle()+","+currentProduct.getType()+","+currentProduct.getRegion()+","+currentProduct.getBrand()+"\n");
+                br.write(getFormatedString(currentProduct));
             }
 
         } catch (IOException e) {
         }
-
     }
 
+    private String getFormatedString(Product product) {
+        return product.getTitle() + ","
+                + product.getType() + ","
+                + product.getRegion() + ","
+                + product.getBrand() + ", "
+                + product.getCountry() + ", "
+                + product.getVolume() + ", "
+                + product.getSweetness() + ", "
+                + product.getAlcoholPercent();
+
+    }
 }

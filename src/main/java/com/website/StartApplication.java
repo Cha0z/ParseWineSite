@@ -1,9 +1,9 @@
 package com.website;
 
+import com.website.entity.Product;
 import com.website.wraper.Wrapper;
 
 import java.util.List;
-import java.util.Map;
 
 public class StartApplication {
 
@@ -12,14 +12,15 @@ public class StartApplication {
 
         Wrapper wrapperComponent = new Wrapper(linkOfWebSite);
 
-    //    List<String> linksOfAllProductFromSection = wrapperComponent.getAllLinkFromSection();
+        //    List<String> linksOfAllProductFromSection = wrapperComponent.getAllLinkFromSection();
 
-        List<Map<String,String>> informationAboutAllProduct = wrapperComponent.getInformationAboutAllProduct();
-
-        System.out.println(informationAboutAllProduct.size());
+        //   List<Map<String, String>> informationAboutAllProduct = wrapperComponent.getInformationAboutAllProduct();
 
 
 
+      //  List<Product> products = wrapperComponent.getProductList();
+
+        wrapperComponent.putInformationAboutProductToCsv();
 
 
     }

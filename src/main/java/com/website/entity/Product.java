@@ -14,22 +14,6 @@ public class Product implements Serializable {
     private String alcoholPercent;
 
 
-    public Product(String title, String type, String region,
-                   String brand, String country, String volume,
-                   String sweetness, String alcoholPercent) {
-        this.title = title;
-        this.type = type;
-        this.region = region;
-        this.brand = brand;
-        this.country = country;
-        this.volume = volume;
-        this.sweetness = sweetness;
-        this.alcoholPercent = alcoholPercent;
-    }
-
-
-
-
     public String getTitle() {
         return title;
     }
@@ -99,14 +83,14 @@ public class Product implements Serializable {
     @Override
     public String toString() {
         return "Product{" +
-                "title='" + title + '\'' +
-                ", type='" + type + '\'' +
-                ", region='" + region + '\'' +
-                ", brand='" + brand + '\'' +
-                ", country='" + country + '\'' +
-                ", volume='" + volume + '\'' +
-                ", sweetness='" + sweetness + '\'' +
-                ", alcoholPercent='" + alcoholPercent + '\'' +
+                "title ='" + title + '\'' +
+                ", type ='" + type + '\'' +
+                ", region ='" + region + '\'' +
+                ", brand ='" + brand + '\'' +
+                ", country ='" + country + '\'' +
+                ", volume ='" + volume + '\'' +
+                ", sweetness ='" + sweetness + '\'' +
+                ", alcoholPercent ='" + alcoholPercent + '\'' +
                 '}';
     }
 }
