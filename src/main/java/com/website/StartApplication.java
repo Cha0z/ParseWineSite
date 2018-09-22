@@ -1,17 +1,20 @@
 package com.website;
 
-import com.website.parsers.MainPageParser;
+import com.website.wraper.Wrapper;
+
+import java.util.List;
 
 public class StartApplication {
 
     public static void main(String[] args) {
         String linkOfWebSite = "http://winetime.com.ua";
 
-        MainPageParser mainPageParser = new MainPageParser(linkOfWebSite,7);
-        mainPageParser.parseLinks();
+        Wrapper wrapperComponent = new Wrapper();
+        List<String> linksOfAllProductFromSection = wrapperComponent.getAllLinkFromSection(linkOfWebSite);
 
 
-     /*   MainPageParser mainPageParser = new MainPageParser(linkOfWebSite,7);
-        List<Section> sections = mainPageParser.parseLinks();*/
+        System.out.println(linksOfAllProductFromSection.size());
+
+
     }
 }

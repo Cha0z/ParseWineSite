@@ -1,7 +1,6 @@
 package com.website.parsers;
 
 import com.website.parsers.document.DocumentCreator;
-import com.website.entity.Product;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -9,32 +8,24 @@ import org.jsoup.select.Elements;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VinePageParser implements Parser {
+public class SectionPageParser {
 
 
     private Document allDataFromPage;
     private List<String> productLinks;
-    private List<Product> productList;
     private int numberOfPagesInSections;
     private int currentPageOfSections;
 
 
-    public VinePageParser(String url) {
+    public SectionPageParser(String url) {
         this.allDataFromPage = new DocumentCreator(url).createDocument();
         this.productLinks = new ArrayList<>();
-        this.productList = new ArrayList<>();
         this.numberOfPagesInSections = getNumberOfPagesInSection();
         this.currentPageOfSections = 1;
     }
 
-    @Override
-    public void parse() {
-        getLinkOfProductFromPage();
-        parseProductToJavaObj();
 
-    }
-
-    private void getLinkOfProductFromPage() {
+    public List<String> getLinksOfProductFromSection() {
 
         for (; currentPageOfSections <= numberOfPagesInSections; currentPageOfSections++) {
             Element mainDivElement = allDataFromPage.getElementsByClass("col-xs-10 catalog_right katalog_tovars footer-100").first();
@@ -46,28 +37,22 @@ public class VinePageParser implements Parser {
                 String linkToProduct = currentElement.attr("abs:href");
                 productLinks.add(linkToProduct);
             }
-
-            try {
-                Thread.sleep(5);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
+//!!!!!!
             System.out.println(currentPageOfSections);
 
             if (currentPageOfSections < numberOfPagesInSections) {
                 allDataFromPage = new DocumentCreator(goToNextPage()).createDocument();
             }
-
         }
+        return productLinks;
     }
 
-    private void parseProductToJavaObj() {
-        PageParser pageParser;
+  /*  private void parseProductToJavaObj() {
+        ProductParser productParser;
         for (String link : productLinks) {
-            pageParser = new PageParser(link);
-            productList.add(pageParser.getProduct());
-            System.out.println(pageParser.getProduct().toString());
+            productParser = new ProductParser(link);
+            productList.add(productParser.getProduct());
+            System.out.println(productParser.getProduct().toString());
             System.out.println();
             try {
                 Thread.sleep(5);
@@ -75,7 +60,7 @@ public class VinePageParser implements Parser {
                 e.printStackTrace();
             }
         }
-    }
+    }*/
 
     private int getNumberOfPagesInSection() {
         Elements linksToNextPages = allDataFromPage.getElementsByClass("pagination pagination_bottom")

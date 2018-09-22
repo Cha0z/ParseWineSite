@@ -6,51 +6,30 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MainPageParser {
 
-
-    private int numberOfSections;
     private Document allDataFromPage;
-    private List<String> listOfSectionsLink;
 
-
-    public MainPageParser(String src, int numberOfSections) {
-        this.numberOfSections = numberOfSections;
+    public MainPageParser(String src) {
         allDataFromPage = new DocumentCreator(src).createDocument();
-        listOfSectionsLink = new ArrayList<>();
     }
 
-    public void parseLinks() {
+    private String parseLinks() {
         Element mainElement = allDataFromPage.getElementsByClass("collapse navbar-collapse main-menu_block").first();
 
         Elements elements = mainElement.select("div > ul > li > a");
-
+        String linkToVineSection = "";
         for (Element currentElement : elements) {
-            String s = (currentElement.attr("abs:href")) + "?size=30";
-            listOfSectionsLink.add(s);
+            if (currentElement.text().contains("Вино")) {
+                linkToVineSection = (currentElement.attr("abs:href"));
+            }
         }
-
-
-        //Not all menu item need. Bellow we delete links that we don`t need. Number of links
-        //we have to choose at the StartApplication.class
-
-        listOfSectionsLink = listOfSectionsLink.subList(0, numberOfSections);
-
-        startParsingSections();
-
-    }
-
-    private void startParsingSections() {
-        CreatorSectionsParser creatorSectionsParser = new CreatorSectionsParser(listOfSectionsLink);
-        creatorSectionsParser.callSectionsParser();
+        return linkToVineSection;
     }
 
 
-    public List<String> getListOfSectionsLink() {
-        return listOfSectionsLink;
+    public String getLinkForSection() {
+        return parseLinks();
     }
 
 
