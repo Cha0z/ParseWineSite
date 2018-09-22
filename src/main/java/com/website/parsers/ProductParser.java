@@ -1,6 +1,8 @@
 package com.website.parsers;
 
 import com.website.parsers.document.DocumentCreator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -15,6 +17,7 @@ public class ProductParser {
     private Document allDataFromPage;
     private List<String> linkContainer;
     private List<Map<String, String>> allInformationAboutProduct;
+    private Logger logger = LogManager.getLogger(ProductParser.class.getSimpleName());
 
 
     public ProductParser(List<String> productsLinks) {
@@ -24,18 +27,19 @@ public class ProductParser {
 
 
     public List<Map<String, String>> getInformationAboutProducts() {
-
+        logger.info("Product`s information search started");
         for (String url : linkContainer) {
             goToNextProduct(url);
             allInformationAboutProduct.add(getInformationAboutCurrentProduct());
 
         }
-
+        logger.info("All information was found");
         return allInformationAboutProduct;
     }
 
 
     private Map<String, String> getInformationAboutCurrentProduct() {
+
         Map<String, String> productInformationContainer = new HashMap<>();
 
         Element dataFromDivWithInformation = allDataFromPage.getElementsByClass("container product-details").first();
@@ -74,16 +78,15 @@ public class ProductParser {
         }
 
         if (!productInformationContainer.containsKey("region")) {
-            productInformationContainer.put("region", "unknown");
+            productInformationContainer.put("region", " ");
         }
 
-        System.out.println(productInformationContainer);
         return productInformationContainer;
     }
 
 
     private String getAlcoholPercent(Element dataFromDivWithInformation) {
-        String alcoholPercent = "Не указано";
+        String alcoholPercent = " ";
         Elements elementsWithData = dataFromDivWithInformation.getElementsByClass("harakter_tovar")
                 .select("p");
 

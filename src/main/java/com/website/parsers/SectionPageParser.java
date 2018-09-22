@@ -1,6 +1,8 @@
 package com.website.parsers;
 
 import com.website.parsers.document.DocumentCreator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -15,7 +17,7 @@ public class SectionPageParser {
     private List<String> productLinks;
     private int numberOfPagesInSections;
     private int currentPageOfSections;
-
+    private Logger logger = LogManager.getLogger(SectionPageParser.class.getSimpleName());
 
     public SectionPageParser(String url) {
         this.allDataFromPage = new DocumentCreator(url).createDocument();
@@ -26,7 +28,7 @@ public class SectionPageParser {
 
 
     public List<String> getLinksOfProductFromSection() {
-
+        logger.info("Start searching link to product`s page");
         for (; currentPageOfSections <= numberOfPagesInSections; currentPageOfSections++) {
             Element mainDivElement = allDataFromPage.getElementsByClass("col-xs-10 catalog_right katalog_tovars footer-100").first();
             Elements linksOfProduct = mainDivElement
@@ -37,13 +39,12 @@ public class SectionPageParser {
                 String linkToProduct = currentElement.attr("abs:href");
                 productLinks.add(linkToProduct);
             }
-//!Для информации о выводе
-            System.out.println(currentPageOfSections);
 
             if (currentPageOfSections < numberOfPagesInSections) {
                 allDataFromPage = new DocumentCreator(goToNextPage()).createDocument();
             }
         }
+        logger.info("All link`s to product page founded");
         return productLinks;
     }
 

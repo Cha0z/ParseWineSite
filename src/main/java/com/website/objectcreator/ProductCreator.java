@@ -1,4 +1,4 @@
-package com.website.creator;
+package com.website.objectcreator;
 
 import com.website.entity.Product;
 
@@ -8,15 +8,16 @@ import java.util.Map;
 
 public class ProductCreator {
 
-    List<Map<String, String>> allProductInformation;
-    List<Product> productList;
+    private List<Map<String, String>> allProductInformation;
+    private List<Product> productList;
+
 
     public ProductCreator(List<Map<String, String>> allProductInformation) {
         this.allProductInformation = allProductInformation;
         this.productList = new ArrayList<>();
     }
 
-    public List<Product> transfornDataToObjects() {
+    public List<Product> transformDataToObjects() {
 
         for (Map<String, String> infoAboutOneProduct : allProductInformation) {
             productList.add(createProductObject(infoAboutOneProduct));

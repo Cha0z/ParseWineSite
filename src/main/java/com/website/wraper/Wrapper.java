@@ -1,6 +1,6 @@
 package com.website.wraper;
 
-import com.website.creator.ProductCreator;
+import com.website.objectcreator.ProductCreator;
 import com.website.entity.Product;
 import com.website.parsers.MainPageParser;
 import com.website.parsers.ProductParser;
@@ -42,7 +42,7 @@ public class Wrapper {
 
     public List<Product> getProductsList() {
         productCreator = new ProductCreator(getInformationAboutAllProduct());
-        return productCreator.transfornDataToObjects();
+        return productCreator.transformDataToObjects();
     }
 
 
