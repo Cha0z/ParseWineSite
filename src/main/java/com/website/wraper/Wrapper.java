@@ -16,33 +16,39 @@ public class Wrapper {
     private SectionPageParser sectionPageParser;
     private ProductParser productParser;
     private ProductCreator productCreator;
-    private DocumentWriter documentWriter;
 
     public Wrapper(String url) {
         this.url = url;
     }
 
-    public List<String> getAllLinkFromSection() {
+
+    private String getLinkToSection() {
         mainPageParser = new MainPageParser(url);
-        String linkToSection = mainPageParser.getLinkForSection();
-        sectionPageParser = new SectionPageParser(linkToSection);
+        return mainPageParser.getLinkForSection();
+    }
+
+    public List<String> getAllLinkFromSection() {
+
+        sectionPageParser = new SectionPageParser(getLinkToSection());
         return sectionPageParser.getLinksOfProductFromSection();
     }
+
 
     public List<Map<String, String>> getInformationAboutAllProduct() {
         productParser = new ProductParser(getAllLinkFromSection());
         return productParser.getInformationAboutProducts();
     }
 
-    public List<Product> getProductList() {
+
+    public List<Product> getProductsList() {
         productCreator = new ProductCreator(getInformationAboutAllProduct());
         return productCreator.transfornDataToObjects();
     }
 
-    public void putInformationAboutProductToCsv() {
-        documentWriter = new DocumentWriter();
-        documentWriter.write(getProductList());
-    }
 
+    public void putInformationAboutProductToCsv() {
+        DocumentWriter documentWriter = new DocumentWriter();
+        documentWriter.write(getProductsList());
+    }
 
 }

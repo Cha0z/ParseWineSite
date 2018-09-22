@@ -17,14 +17,14 @@ public class MainPageParser {
     private String parseLinks() {
         Element mainElement = allDataFromPage.getElementsByClass("collapse navbar-collapse main-menu_block").first();
 
-        Elements elements = mainElement.select("div > ul > li > a");
-        String linkToVineSection = "";
-        for (Element currentElement : elements) {
+        Elements elementsLink = mainElement.select("div > ul > li > a");
+        String linkToWineSection = "";
+        for (Element currentElement : elementsLink) {
             if (currentElement.text().contains("Вино")) {
-                linkToVineSection = (currentElement.attr("abs:href"));
+                linkToWineSection = (currentElement.attr("abs:href"));
             }
         }
-        return linkToVineSection;
+        return linkToWineSection;
     }
 
 

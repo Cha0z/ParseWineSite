@@ -28,7 +28,7 @@ public class DocumentWriter {
                 + product.getCountry() + ", "
                 + product.getVolume() + ", "
                 + product.getSweetness() + ", "
-                + product.getAlcoholPercent();
+                + product.getAlcoholPercent() + "\n";
 
     }
 }

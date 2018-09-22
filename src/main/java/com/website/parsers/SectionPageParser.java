@@ -47,20 +47,6 @@ public class SectionPageParser {
         return productLinks;
     }
 
-  /*  private void parseProductToJavaObj() {
-        ProductParser productParser;
-        for (String link : productLinks) {
-            productParser = new ProductParser(link);
-            productList.add(productParser.getProduct());
-            System.out.println(productParser.getProduct().toString());
-            System.out.println();
-            try {
-                Thread.sleep(5);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }*/
 
     private int getNumberOfPagesInSection() {
         Elements linksToNextPages = allDataFromPage.getElementsByClass("pagination pagination_bottom")

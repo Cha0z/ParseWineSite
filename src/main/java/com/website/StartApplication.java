@@ -1,9 +1,6 @@
 package com.website;
 
-import com.website.entity.Product;
 import com.website.wraper.Wrapper;
-
-import java.util.List;
 
 public class StartApplication {
 
@@ -16,9 +13,7 @@ public class StartApplication {
 
         //   List<Map<String, String>> informationAboutAllProduct = wrapperComponent.getInformationAboutAllProduct();
 
-
-
-      //  List<Product> products = wrapperComponent.getProductList();
+        //  List<Product> products = wrapperComponent.getProductsList();
 
         wrapperComponent.putInformationAboutProductToCsv();
 

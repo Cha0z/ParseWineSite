@@ -12,24 +12,20 @@ import java.util.Map;
 
 public class ProductParser {
 
-
     private Document allDataFromPage;
-
     private List<String> linkContainer;
-    private List<Map<String,String>> allInformationAboutProduct;
+    private List<Map<String, String>> allInformationAboutProduct;
 
 
     public ProductParser(List<String> productsLinks) {
         this.allInformationAboutProduct = new ArrayList<>();
         this.linkContainer = productsLinks;
-
-
     }
 
 
     public List<Map<String, String>> getInformationAboutProducts() {
 
-        for(String url:linkContainer){
+        for (String url : linkContainer) {
             goToNextProduct(url);
             allInformationAboutProduct.add(getInformationAboutCurrentProduct());
 
@@ -37,6 +33,7 @@ public class ProductParser {
 
         return allInformationAboutProduct;
     }
+
 
     private Map<String, String> getInformationAboutCurrentProduct() {
         Map<String, String> productInformationContainer = new HashMap<>();
@@ -53,7 +50,7 @@ public class ProductParser {
             if (currentElement.text().contains("Цвет")) {
                 continue;
             } else {
-                StringBuffer currentLine = new StringBuffer(currentElement.text());
+                StringBuilder currentLine = new StringBuilder(currentElement.text());
 
                 if (currentLine.toString().contains("Сладость:")) {
                     productInformationContainer.put("sweetness", currentLine.substring(currentLine.indexOf(" ")).trim());
@@ -76,8 +73,8 @@ public class ProductParser {
             }
         }
 
-        if (!productInformationContainer.containsKey("region")){
-            productInformationContainer.put("region","unknown");
+        if (!productInformationContainer.containsKey("region")) {
+            productInformationContainer.put("region", "unknown");
         }
 
         System.out.println(productInformationContainer);
@@ -105,6 +102,7 @@ public class ProductParser {
 
         return elementWithData.select("div.product-details-wraper > h1").text().trim();
     }
+
 
     private void goToNextProduct(String url) {
         this.allDataFromPage = new DocumentCreator(url).createDocument();
