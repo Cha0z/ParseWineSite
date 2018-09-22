@@ -1,69 +1,49 @@
 package com.website.parsers;
 
-import com.website.entity.FeautureContainer;
-import com.website.entity.ProductFeature;
 import com.website.parsers.document.DocumentCreator;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import static com.website.entity.ProductFeature.*;
 
 public class ProductParser {
 
 
     private Document allDataFromPage;
-    private Map<String, String> productInformationContainer;
+
+    private List<String> linkContainer;
+    private List<Map<String,String>> allInforationAboutProduct;
 
 
-    public ProductParser(String url) {
+    public ProductParser(List<String> productsLinks) {
+        this.linkContainer = productsLinks;
 
-        this.allDataFromPage = new DocumentCreator(url).createDocument();
-        productInformationContainer = new HashMap<>();
+
     }
 
 
-    private Map<String, String> getInformationAboutProduct() {
+    public List<Map<String, String>> getInformationAboutProducts() {
 
+        for(String url:linkContainer){
+            goToNextProduct(url);
+            allInforationAboutProduct.add(getInformationAboutCurrentProduct());
+        }
 
-
-        productInformationContainer.put()
-
-        String title = dataFromDivWithInformation.select("div.product-details-wraper > h1").text().trim();
-        String sweetness = getElement(ProductFeature.SWEETNESS);
-        String type = getElement(ProductFeature.TYPE);
-        String country = getElement(ProductFeature.COUNTRY);
-        String region = getElement(ProductFeature.REGION);
-        String brand = getElement(ProductFeature.BRAND);
-        String volume = getElement(VOLUME);
-        String alcoholPercent = getAlcoholPercent(dataFromDivWithInformation);
-
-
-        return;
+        return allInforationAboutProduct;
     }
 
-    private void fillProductInformaionContainer() {
+    private Map<String, String> getInformationAboutCurrentProduct() {
+        Map<String, String> productInformationContainer = new HashMap<>();
+
         Element dataFromDivWithInformation = allDataFromPage.getElementsByClass("container product-details").first();
-
-
-
-
-
-
-
-
-
-
-
-
-        List<FeautureContainer> dataList = new ArrayList<>();
         Elements elementsWithData = dataFromDivWithInformation.getElementsByClass("details_about")
                 .select("tbody > tr > td > p");
+
+        productInformationContainer.put("title", getTitleField(dataFromDivWithInformation));
+        productInformationContainer.put("alcoholPercent", getAlcoholPercent(dataFromDivWithInformation));
 
 
         for (Element currentElement : elementsWithData) {
@@ -73,27 +53,28 @@ public class ProductParser {
                 StringBuffer currentLine = new StringBuffer(currentElement.text());
 
                 if (currentLine.toString().contains("Сладость:")) {
-                    dataList.add(new FeautureContainer(SWEETNESS, currentLine.substring(currentLine.indexOf(" "))));
+                    productInformationContainer.put("sweetness", currentLine.substring(currentLine.indexOf(" ")));
                 }
                 if (currentLine.toString().contains("Тип:")) {
-                    dataList.add(new FeautureContainer(TYPE, currentLine.substring(currentLine.indexOf(" "))));
+                    productInformationContainer.put("type", currentLine.substring(currentLine.indexOf(" ")));
                 }
                 if (currentLine.toString().contains("Страна:")) {
-                    dataList.add(new FeautureContainer(COUNTRY, currentLine.substring(currentLine.indexOf(" "))));
+                    productInformationContainer.put("country", currentLine.substring(currentLine.indexOf(" ")));
                 }
                 if (currentLine.toString().contains("Производитель:")) {
-                    dataList.add(new FeautureContainer(BRAND, currentLine.substring(currentLine.indexOf(" "))));
+                    productInformationContainer.put("brand", currentLine.substring(currentLine.indexOf(" ")));
                 }
                 if (currentLine.toString().contains("Объём:")) {
-                    dataList.add(new FeautureContainer(VOLUME, currentLine.substring(currentLine.indexOf(" "))));
+                    productInformationContainer.put("volume", currentLine.substring(currentLine.indexOf(" ")));
                 }
                 if (currentLine.toString().contains("Регион:")) {
-                    dataList.add(new FeautureContainer(REGION, currentLine.substring(currentLine.indexOf(" "))));
+                    productInformationContainer.put("region", currentLine.substring(currentLine.indexOf(" ")));
                 }
             }
         }
-        return dataList;
+        return productInformationContainer;
     }
+
 
     private String getAlcoholPercent(Element dataFromDivWithInformation) {
         String alcoholPercent = "Не указано";
@@ -110,18 +91,13 @@ public class ProductParser {
         return alcoholPercent;
     }
 
-    private String getElement(ProductFeature feature) {
-        String textContainer = " ";
-        for (FeautureContainer container : generalDataAboutProduct) {
-            if (container.getFeatureType().equals(feature)) {
-                textContainer = container.getFeautureName().trim();
-            }
-        }
-        if (textContainer.equals(" ")) {
-            textContainer = "Значение отсутствует";
-        }
-        return textContainer;
+
+    private String getTitleField(Element elementWithData) {
+
+        return elementWithData.select("div.product-details-wraper > h1").text().trim();
     }
 
-
+    private void goToNextProduct(String url) {
+        this.allDataFromPage = new DocumentCreator(url).createDocument();
+    }
 }
