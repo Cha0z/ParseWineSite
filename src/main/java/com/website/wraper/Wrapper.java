@@ -1,9 +1,9 @@
 package com.website.wraper;
 
-import com.website.objectcreator.ProductCreator;
 import com.website.entity.Product;
+import com.website.objectcreator.ProductCreator;
 import com.website.parsers.MainPageParser;
-import com.website.parsers.ProductParser;
+import com.website.parsers.ProductPageParser;
 import com.website.parsers.SectionPageParser;
 import com.website.writer.DocumentWriter;
 
@@ -12,9 +12,10 @@ import java.util.Map;
 
 public class Wrapper {
     private String url;
+
     private MainPageParser mainPageParser;
     private SectionPageParser sectionPageParser;
-    private ProductParser productParser;
+    private ProductPageParser productPageParser;
     private ProductCreator productCreator;
 
     public Wrapper(String url) {
@@ -35,8 +36,8 @@ public class Wrapper {
 
 
     public List<Map<String, String>> getInformationAboutAllProduct() {
-        productParser = new ProductParser(getAllLinkFromSection());
-        return productParser.getInformationAboutProducts();
+        productPageParser = new ProductPageParser(getAllLinkFromSection());
+        return productPageParser.getInformationAboutProducts();
     }
 
 

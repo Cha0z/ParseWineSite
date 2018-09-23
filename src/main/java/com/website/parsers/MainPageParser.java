@@ -17,9 +17,9 @@ public class MainPageParser {
     }
 
     private String parseLinks() {
-        Element mainElement = allDataFromPage.getElementsByClass("collapse navbar-collapse main-menu_block").first();
+        Element elementThatContainsMenu = allDataFromPage.getElementsByClass("collapse navbar-collapse main-menu_block").first();
 
-        Elements elementsLink = mainElement.select("a");
+        Elements elementsLink = elementThatContainsMenu.select("a");
         String linkToWineSection = "";
         for (Element currentElement : elementsLink) {
             if (currentElement.text().contains("Вино")) {

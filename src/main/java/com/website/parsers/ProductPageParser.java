@@ -12,15 +12,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ProductParser {
+public class ProductPageParser{
 
     private Document allDataFromPage;
     private List<String> linkContainer;
     private List<Map<String, String>> allInformationAboutProduct;
-    private Logger logger = LogManager.getLogger(ProductParser.class.getSimpleName());
+    private Logger logger = LogManager.getLogger(ProductPageParser.class.getSimpleName());
 
 
-    public ProductParser(List<String> productsLinks) {
+    public ProductPageParser(List<String> productsLinks) {
         this.allInformationAboutProduct = new ArrayList<>();
         this.linkContainer = productsLinks;
     }

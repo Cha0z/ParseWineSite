@@ -10,7 +10,7 @@ import org.jsoup.select.Elements;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SectionPageParser {
+public class SectionPageParser{
 
 
     private Document allDataFromPage;
@@ -30,8 +30,8 @@ public class SectionPageParser {
     public List<String> getLinksOfProductFromSection() {
         logger.info("Start searching link to product`s page");
         for (; currentPageOfSections <= numberOfPagesInSections; currentPageOfSections++) {
-            Element mainDivElement = allDataFromPage.getElementsByClass("col-xs-10 catalog_right katalog_tovars footer-100").first();
-            Elements linksOfProduct = mainDivElement
+            Element productCatalog = allDataFromPage.getElementsByClass("col-xs-10 catalog_right katalog_tovars footer-100").first();
+            Elements linksOfProduct = productCatalog
                     .getElementsByClass("item-block-head_main")
                     .select("div > a");
 
@@ -40,9 +40,11 @@ public class SectionPageParser {
                 productLinks.add(linkToProduct);
             }
 
+            System.out.println(currentPageOfSections);
             if (currentPageOfSections < numberOfPagesInSections) {
                 allDataFromPage = new DocumentCreator(goToNextPage()).createDocument();
             }
+
         }
         logger.info("All link`s to product page founded");
         return productLinks;
@@ -50,13 +52,15 @@ public class SectionPageParser {
 
 
     private int getNumberOfPagesInSection() {
-        Elements linksToNextPages = allDataFromPage.getElementsByClass("pagination pagination_bottom")
-                .select("li > a.pag");
+        Elements elementWithPagination = allDataFromPage.getElementsByClass("pagination pagination_bottom")
+                .select("li > a");
         List<Integer> listOfNumberPages = new ArrayList<>();
 
-        for (Element currentElement : linksToNextPages
+        for (Element currentElement : elementWithPagination
         ) {
-            listOfNumberPages.add(Integer.parseInt(currentElement.text()));
+            if (isNumeric(currentElement.text())) {
+                listOfNumberPages.add(Integer.parseInt(currentElement.text()));
+            }
         }
 
         return listOfNumberPages.stream().max(Integer::compare).get();
@@ -64,10 +68,34 @@ public class SectionPageParser {
     }
 
     private String goToNextPage() {
+        Elements elementWithPagination = allDataFromPage.getElementsByClass("pagination")
+                .select("ul[class='pagination pagination_bottom'] > li > a");
+        String linkToNextPage = "";
+        for (Element currentElement : elementWithPagination) {
+            if (isNumeric(currentElement.text())) {
+                if (Integer.parseInt(currentElement.text()) == currentPageOfSections + 1) {
+                    linkToNextPage = currentElement.attr("abs:href");
+                    break;
+                }
+            }
+        }
+        return linkToNextPage;
+    }
+
+    /*private String goToNextPage() {
         Element linkToNextPage = allDataFromPage.getElementsByClass("pagination pagination_bottom")
                 .select("li > a[rel=next]").first();
 
         return linkToNextPage.attr("abs:href");
+    }*/
+
+    private boolean isNumeric(String str) {
+        try {
+            double variable = Double.parseDouble(str);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
     }
 
 }
