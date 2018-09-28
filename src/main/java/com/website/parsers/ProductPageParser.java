@@ -7,12 +7,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-public class ProductPageParser{
+public class ProductPageParser {
 
     private Document allDataFromPage;
     private List<String> linkContainer;
@@ -29,8 +26,9 @@ public class ProductPageParser{
     public List<Map<String, String>> getInformationAboutProducts() {
         logger.info("Product`s information search started");
         for (String url : linkContainer) {
-            goToNextProduct(url);
-            allInformationAboutProduct.add(getInformationAboutCurrentProduct());
+            getAllDataFromProductPage(url);
+            allInformationAboutProduct.add(searchInformationAboutCurrentProduct());
+
 
         }
         logger.info("All information was found");
@@ -38,7 +36,7 @@ public class ProductPageParser{
     }
 
 
-    private Map<String, String> getInformationAboutCurrentProduct() {
+    private Map<String, String> searchInformationAboutCurrentProduct() {
 
         Map<String, String> productInformationContainer = new HashMap<>();
 
@@ -51,31 +49,32 @@ public class ProductPageParser{
 
 
         for (Element currentElement : elementsWithData) {
-            if (currentElement.text().contains("Цвет")) {
-                continue;
-            } else {
-                StringBuilder currentLine = new StringBuilder(currentElement.text());
 
-                if (currentLine.toString().contains("Сладость:")) {
-                    productInformationContainer.put("sweetness", currentLine.substring(currentLine.indexOf(" ")).trim());
-                }
-                if (currentLine.toString().contains("Тип:")) {
-                    productInformationContainer.put("type", currentLine.substring(currentLine.indexOf(" ")).trim());
-                }
-                if (currentLine.toString().contains("Страна:")) {
-                    productInformationContainer.put("country", currentLine.substring(currentLine.indexOf(" ")).trim());
-                }
-                if (currentLine.toString().contains("Производитель:")) {
-                    productInformationContainer.put("brand", currentLine.substring(currentLine.indexOf(" ")).trim());
-                }
-                if (currentLine.toString().contains("Объём:")) {
-                    productInformationContainer.put("volume", currentLine.substring(currentLine.indexOf(" ")).trim());
-                }
-                if (currentLine.toString().contains("Регион:")) {
-                    productInformationContainer.put("region", currentLine.substring(currentLine.indexOf(" ")).trim());
-                }
+            StringBuilder currentLine = new StringBuilder(currentElement.text());
+
+            if (currentLine.toString().contains("Сладость:")) {
+                productInformationContainer.put("sweetness", currentLine.substring(currentLine.indexOf(" ")).trim());
+            }
+            if (currentLine.toString().contains("Цвет:")) {
+                productInformationContainer.put("color", currentLine.substring(currentLine.indexOf(" ")).trim());
+            }
+            if (currentLine.toString().contains("Тип:")) {
+                productInformationContainer.put("type", currentLine.substring(currentLine.indexOf(" ")).trim());
+            }
+            if (currentLine.toString().contains("Страна:")) {
+                productInformationContainer.put("country", currentLine.substring(currentLine.indexOf(" ")).trim());
+            }
+            if (currentLine.toString().contains("Производитель:")) {
+                productInformationContainer.put("brand", currentLine.substring(currentLine.indexOf(" ")).trim());
+            }
+            if (currentLine.toString().contains("Объём:")) {
+                productInformationContainer.put("volume", currentLine.substring(currentLine.indexOf(" ")).trim());
+            }
+            if (currentLine.toString().contains("Регион:")) {
+                productInformationContainer.put("region", currentLine.substring(currentLine.indexOf(" ")).trim());
             }
         }
+
 
         if (!productInformationContainer.containsKey("region")) {
             productInformationContainer.put("region", " ");
@@ -107,7 +106,9 @@ public class ProductPageParser{
     }
 
 
-    private void goToNextProduct(String url) {
+    private void getAllDataFromProductPage(String url) {
         this.allDataFromPage = new DocumentCreator(url).createDocument();
     }
+
+
 }

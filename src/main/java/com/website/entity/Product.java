@@ -1,8 +1,8 @@
 package com.website.entity;
 
-import java.io.Serializable;
+import java.util.List;
 
-public class Product implements Serializable {
+public class Product {
 
     private String title;
     private String type;
@@ -12,6 +12,9 @@ public class Product implements Serializable {
     private String volume;
     private String sweetness;
     private String alcoholPercent;
+    private String color;
+    private String description;
+    private List<String> review;
 
 
     public String getTitle() {
@@ -78,18 +81,27 @@ public class Product implements Serializable {
         this.alcoholPercent = alcoholPercent;
     }
 
+    public String getColor() {
+        return color;
+    }
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "title ='" + title + '\'' +
-                ", type ='" + type + '\'' +
-                ", region ='" + region + '\'' +
-                ", brand ='" + brand + '\'' +
-                ", country ='" + country + '\'' +
-                ", volume ='" + volume + '\'' +
-                ", sweetness ='" + sweetness + '\'' +
-                ", alcoholPercent ='" + alcoholPercent + '\'' +
-                '}';
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public List<String> getReview() {
+        return review;
+    }
+
+    public void setReview(List<String> review) {
+        this.review = review;
     }
 }

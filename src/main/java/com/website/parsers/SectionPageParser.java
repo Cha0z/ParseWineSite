@@ -10,7 +10,7 @@ import org.jsoup.select.Elements;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SectionPageParser{
+public class SectionPageParser {
 
 
     private Document allDataFromPage;
@@ -40,11 +40,9 @@ public class SectionPageParser{
                 productLinks.add(linkToProduct);
             }
 
-            System.out.println(currentPageOfSections);
             if (currentPageOfSections < numberOfPagesInSections) {
                 allDataFromPage = new DocumentCreator(goToNextPage()).createDocument();
             }
-
         }
         logger.info("All link`s to product page founded");
         return productLinks;
@@ -62,7 +60,6 @@ public class SectionPageParser{
                 listOfNumberPages.add(Integer.parseInt(currentElement.text()));
             }
         }
-
         return listOfNumberPages.stream().max(Integer::compare).get();
 
     }
@@ -82,12 +79,6 @@ public class SectionPageParser{
         return linkToNextPage;
     }
 
-    /*private String goToNextPage() {
-        Element linkToNextPage = allDataFromPage.getElementsByClass("pagination pagination_bottom")
-                .select("li > a[rel=next]").first();
-
-        return linkToNextPage.attr("abs:href");
-    }*/
 
     private boolean isNumeric(String str) {
         try {

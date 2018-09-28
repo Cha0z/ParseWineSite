@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a482b91-db58-4592-a036-0b29f576c80a" name="Default Changelist" comment="">
+    <list default="true" id="8a482b91-db58-4592-a036-0b29f576c80a" name="Default Changelist" comment="save point(all working)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/webdriwer/WebDriverHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved Files/file.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/website/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/StartApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/parsers/MainPageParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/MainPageParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductPageParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductPageParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductPageParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/website/parsers/SectionPageParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/SectionPageParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/website/Writer/DocumentWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/Writer/DocumentWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/writer/DocumentWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/StartApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/StartApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/Writer/DocumentWriter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/website/creator/ProductCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/entity/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/website/parsers/MainPageParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/parsers/MainPageParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/website/parsers/ProductParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/website/parsers/SectionPageParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/parsers/SectionPageParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/website/wraper/Wrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/wraper/Wrapper.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,46 +77,51 @@
     <session id="-1826960025">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.18" value="3" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="3" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="csv" value="4" />
-          <entry key="java" value="18" />
-          <entry key="xml" value="2" />
+          <entry key="csv" value="11" />
+          <entry key="java" value="41" />
+          <entry key="xml" value="6" />
           <entry key="yaml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="18" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="41" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="XML" value="6" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="12" />
-          <entry key="java" value="3130" />
-          <entry key="txt" value="90" />
-          <entry key="xml" value="6" />
+          <entry key="csv" value="1" />
+          <entry key="dummy" value="28" />
+          <entry key="java" value="6924" />
+          <entry key="txt" value="117" />
+          <entry key="xml" value="7" />
           <entry key="yaml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3130" />
-          <entry key="PLAIN_TEXT" value="102" />
-          <entry key="XML" value="6" />
+          <entry key="JAVA" value="6924" />
+          <entry key="PLAIN_TEXT" value="146" />
+          <entry key="XML" value="7" />
           <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
@@ -113,10 +130,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/MainPageParser.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/StartApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,69 +144,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="561">
+              <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/SectionPageParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/StartApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/document/DocumentCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductPageParser.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-222">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="170">
+              <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getInformationAboutProducts#0;class#ProductParser#0" />
+                <element signature="e#1134#1135#0" expanded="true" />
+                <element signature="e#1176#1177#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java">
+        <entry file="file://$PROJECT_DIR$/Saved Files/file.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="663">
+              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -197,17 +179,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+            <state relative-caret-position="652">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="476">
+              <caret line="60" column="83" selection-start-line="60" selection-start-column="83" selection-end-line="60" selection-end-column="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,8 +203,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -231,6 +216,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -261,19 +251,25 @@
         <option value="$PROJECT_DIR$/src/main/java/com/website/Writer/DocumentWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/wraper/Wraper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/datasource/ProductCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/entity/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/creator/ProductCreator.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.yaml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/writer/DocumentWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/StartApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/MainPageParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/SectionPageParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductPageParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/MainPageParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/writer/DocumentWriter.java" />
+        <option value="$PROJECT_DIR$/Saved Files/file.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/entity/ProductReview.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/entity/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/webdriwer/WebDriverHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/StartApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -290,10 +286,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="282" />
-    <option name="width" value="1647" />
-    <option name="height" value="1088" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="750" />
+    <option name="y" value="17" />
+    <option name="width" value="869" />
+    <option name="height" value="1004" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -356,7 +353,48 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParseSite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="fileworker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParseSite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="objectcreator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParseSite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
               <item name="parsers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParseSite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="parsers" type="462c0819:PsiDirectoryNode" />
+              <item name="webdriwer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parse" type="b2602c69:ProjectViewProjectNode" />
@@ -369,15 +407,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537708538025" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538173338885" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../firstproject" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -403,6 +441,32 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.StartApplication">
+    <configuration name="DocumentReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.website.fileworker.DocumentReader" />
+      <module name="parse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.website.fileworker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductSearcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.website.parsers.ProductSearcher" />
+      <module name="parse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.website.parsers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StartApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -434,10 +498,14 @@
     <list>
       <item itemvalue="Application.site" />
       <item itemvalue="Application.StartApplication" />
+      <item itemvalue="Application.DocumentReader" />
+      <item itemvalue="Application.ProductSearcher" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.StartApplication" />
+        <item itemvalue="Application.ProductSearcher" />
+        <item itemvalue="Application.DocumentReader" />
         <item itemvalue="Application.site" />
       </list>
     </recent_temporary>
@@ -457,7 +525,16 @@
       <workItem from="1537568069661" duration="26844000" />
       <workItem from="1537634999914" duration="951000" />
       <workItem from="1537637342244" duration="350000" />
-      <workItem from="1537659085415" duration="7574000" />
+      <workItem from="1537659085415" duration="11662000" />
+      <workItem from="1537725353858" duration="127000" />
+      <workItem from="1537725526877" duration="412000" />
+      <workItem from="1537726015410" duration="3852000" />
+      <workItem from="1537730180149" duration="19000" />
+      <workItem from="1537733638931" duration="163000" />
+      <workItem from="1537801182155" duration="345000" />
+      <workItem from="1537801814632" duration="3116000" />
+      <workItem from="1537990710668" duration="1472000" />
+      <workItem from="1538003404325" duration="29390000" />
     </task>
     <task id="LOCAL-00001" summary="Working parser">
       <created>1537558459485</created>
@@ -473,33 +550,49 @@
       <option name="project" value="LOCAL" />
       <updated>1537619662134</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="save point(all working)">
+      <created>1537708679855</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537708679855</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92404000" />
+    <option name="totallyTimeSpent" value="135388000" />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="870" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.48682386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27986577" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.328125" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0963365" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3771812" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3261745" />
+      <window_info anchor="bottom" x="123" y="245" width="1263" height="350" id="Run" order="2" weight="0.51946306" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.54093957" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3292683" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3292683" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32885906" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.23744912" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.31543624" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -542,6 +635,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -574,7 +670,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working parser" />
     <MESSAGE value="finish logic of application" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish logic of application" />
+    <MESSAGE value="save point(all working)" />
+    <option name="LAST_COMMIT_MESSAGE" value="save point(all working)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -639,64 +736,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/website/entity/FeautureContainer.java" />
     <entry file="file://$PROJECT_DIR$/file.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.yaml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/writer/DocumentWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Saved Files/file.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20672">
-          <caret line="1216" column="7" selection-start-line="1216" selection-start-column="7" selection-end-line="1216" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/StartApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar!/org/jsoup/select/NodeTraversor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -711,34 +750,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/Parser.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/document/DocumentCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="221">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/Parser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/SectionPageParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="1224">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -747,21 +777,137 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/MainPageParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="85">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/entity/ProductReview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#1922#1923#0" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#2037#2038#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductPageParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-222">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="272">
+          <caret line="16" column="90" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getInformationAboutProducts#0;class#ProductParser#0" />
+            <element signature="method#getAlcoholPercent#0;class#ProductPageParser#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/webdriwer/WebDriverHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/StartApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="60" column="83" selection-start-line="60" selection-start-column="83" selection-end-line="60" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Saved Files/file.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
           </folding>
         </state>
       </provider>
