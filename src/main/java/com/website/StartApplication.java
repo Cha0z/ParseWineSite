@@ -22,8 +22,9 @@ public class StartApplication {
         //   wrapperComponent.putInformationAboutProductToCsv();
 
 
-        List<Product> list = wrapperComponent.getReviews();
+       // List<Product> list = wrapperComponent.getReviews();
 
+        wrapperComponent.writeObjToJson();
 
     }
 }

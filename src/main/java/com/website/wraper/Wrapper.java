@@ -46,7 +46,7 @@ public class Wrapper {
 
 
     public List<Product> getProductsList(List outerList) {
-        List<Product> productList = null;
+        List productList = null;
         if (outerList.get(1) instanceof Map) {
             productCreator = new ProductCreator();
             productList = productCreator.transformDataToObjects(outerList);
@@ -60,7 +60,7 @@ public class Wrapper {
 
     public void putInformationAboutProductToCsv() {
         DocumentWriter documentWriter = new DocumentWriter();
-        documentWriter.write(getProductsList(getInformationAboutAllProduct()));
+        documentWriter.writeToCsv(getProductsList(getInformationAboutAllProduct()));
     }
 
     public List<String[]> getInformationAboutProductFromCsv() {
@@ -70,9 +70,14 @@ public class Wrapper {
     }
 
     public List<Product> getReviews() {
-        List<Product> products;
+
         productSearcher = new ProductSearcher(getProductsList(getInformationAboutProductFromCsv()));
-        return  products = productSearcher.findAllReviews();
+        return productSearcher.findAllReviews();
+    }
+
+    public void writeObjToJson() {
+        DocumentWriter documentWriter = new DocumentWriter();
+        documentWriter.writeToJson(getReviews());
     }
 
 }

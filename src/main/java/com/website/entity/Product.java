@@ -1,19 +1,33 @@
 package com.website.entity;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class Product {
-
+    @Expose
     private String title;
+
     private String type;
+
     private String region;
+
     private String brand;
+
     private String country;
+
     private String volume;
+
     private String sweetness;
+
     private String alcoholPercent;
+
     private String color;
+
     private String description;
+    @Expose
+    @SerializedName("reviews")
     private List<String> review;
 
 

@@ -7,72 +7,85 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import waiter.Waiter;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class ProductSearcher {
 
     private String url;
-    private List<Product> productList;
+    private List<Product> originalProductList;
+    private List<Product> productListOnlyWithRewiews;
     private static WebDriver webDriver;
     private Logger logger = LogManager.getLogger(ProductSearcher.class.getSimpleName());
-    Actions actions;
+    private Waiter waiter;
+    private WebDriverWait wait;
+    private Product product;
 
-    public ProductSearcher(List<Product> productList) {
-        this.productList = productList;
+
+    public ProductSearcher(List<Product> originalProductList) {
+        this.originalProductList = originalProductList;
+        productListOnlyWithRewiews = new ArrayList<>();
         this.url = "https://www.vivino.com/";
         webDriver = WebDriverHolder.getInstance().getWebDriver();
-        actions = new Actions(webDriver);
-        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        waiter = new Waiter();
+        wait = new WebDriverWait(webDriver, 10);
     }
 
 
     public List<Product> findAllReviews() {
         goToWebSite();
 
-
         logger.info("Старт поиска");
-        for (Product currentProduct : productList) {
+        int currentIndex = getCurrentIndex();
 
-            tryToFindNextProduct(currentProduct.getTitle());
-            System.out.println(currentProduct.getTitle());
-            if (checkIfElementAvailable()) {
-                WebElement productLink = webDriver.findElement(By.cssSelector("div.wine-card__image-wrapper > a"));
-                productLink.click();
-               /* Actions actions = new Actions(webDriver);
+        try {
+            for (; currentIndex < originalProductList.size(); currentIndex++) {
+
+
+                tryToFindNextProduct(originalProductList.get(currentIndex).getTitle());
+                waiter.waitForPageLoadComplete(webDriver);
+                if (checkIfElementAvailable()) {
+
+                    WebElement productLink = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.wine-card__image-wrapper > a")));
+                    productLink.click();
+                    product = originalProductList.get(currentIndex);
+                    product.setReview(findReviewAboutProduct());
+                    productListOnlyWithRewiews.add(product);
+                } else {
+                    List<String> emptyList = new ArrayList<>();
+                    emptyList.add("No reviews#");
+                    originalProductList.get(currentIndex).setReview(emptyList);
+                }
+
                 try {
-                    actions.wait(2000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                }*/
-
-                currentProduct.setReview(findReviewAboutProduct());
-            } else {
-                List<String> emptyList = new ArrayList<>();
-                emptyList.add("No reviews");
-                currentProduct.setReview(emptyList);
+                }
             }
+        } catch (Exception e) {
+            writeIndexToFile(currentIndex);
 
 
+            return productListOnlyWithRewiews;
         }
         logger.info("Поиск всего закончен");
         webDriver.close();
 
-        return productList;
-
+        return originalProductList;
     }
 
     private void tryToFindNextProduct(String title) {
 
 
-        WebElement searchElement = webDriver.findElement(By.xpath("//input[@id='search-input']"));
+        WebElement searchElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='search-input']")));
         searchElement.click();
         searchElement.sendKeys(title + "\n");
-
-
     }
 
     private void goToWebSite() {
@@ -82,8 +95,15 @@ public class ProductSearcher {
     private List<String> findReviewAboutProduct() {
         List<String> reviewList;
 
-
         ReviewSearcher searcher = new ReviewSearcher();
+
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         reviewList = searcher.getAllReviewAboutProduct();
 
         return reviewList;
@@ -91,8 +111,8 @@ public class ProductSearcher {
     }
 
     private boolean checkIfElementAvailable() {
-        WebElement webElement = webDriver.findElement(By.cssSelector(".search-page__container"));
-        WebElement childWebElement = webElement.findElement(By.cssSelector("div.search-page__content > div"));
+        WebElement childWebElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.search-page__content > div")));
+
         String check = childWebElement.getAttribute("class");
         if (check.equals("alert alert-warning text-center")) {
             return false;
@@ -100,8 +120,23 @@ public class ProductSearcher {
         return true;
     }
 
-    /*public static void main(String[] args) {
-        ProductSearcher ps = new ProductSearcher();
-        ps.findAllReviews();
-    }*/
+    private int getCurrentIndex() {
+        int currentIndex = 0;
+        try (BufferedReader reader = new BufferedReader(new FileReader(new File("Saved Files/index/index.txt")))) {
+            currentIndex = Integer.parseInt(reader.readLine());
+        } catch (IOException exception) {
+        }
+        return currentIndex;
+    }
+
+    private void writeIndexToFile(Integer currentIndex) {
+        try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("Saved Files/index/index.txt")))) {
+            bw.write(currentIndex.toString());
+        } catch (IOException exception) {
+        }
+    }
+
+
 }
+
+

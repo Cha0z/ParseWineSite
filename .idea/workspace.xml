@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a482b91-db58-4592-a036-0b29f576c80a" name="Default Changelist" comment="save point(all working)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/webdriwer/WebDriverHolder.java" afterDir="false" />
+    <list default="true" id="8a482b91-db58-4592-a036-0b29f576c80a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Saved Files/index/index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/website/jsonserializer/ProductSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved Files/file.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/website/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/StartApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/website/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductPageParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductPageParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/parsers/SectionPageParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/SectionPageParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/parsers/webdriwer/WebDriverHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/parsers/webdriwer/WebDriverHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/website/writer/DocumentWriter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/website/StartApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/StartApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/website/Writer/DocumentWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/website/creator/ProductCreator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/website/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/website/parsers/MainPageParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/parsers/MainPageParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/website/parsers/ProductParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/website/parsers/SectionPageParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/parsers/SectionPageParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/website/wraper/Wrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/website/wraper/Wrapper.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -77,32 +67,38 @@
     <session id="-1826960025">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.18" value="3" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="3" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="3" />
-          <entry key="csv" value="11" />
-          <entry key="java" value="41" />
+          <entry key="class" value="8" />
+          <entry key="csv" value="13" />
+          <entry key="java" value="69" />
+          <entry key="json" value="13" />
+          <entry key="txt" value="15" />
           <entry key="xml" value="6" />
           <entry key="yaml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="41" />
-          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="CLASS" value="8" />
+          <entry key="JAVA" value="69" />
+          <entry key="JSON" value="13" />
+          <entry key="PLAIN_TEXT" value="28" />
           <entry key="XML" value="6" />
           <entry key="YAML" value="1" />
         </counts>
@@ -111,17 +107,19 @@
         <counts>
           <entry key="csv" value="1" />
           <entry key="dummy" value="28" />
-          <entry key="java" value="6924" />
-          <entry key="txt" value="117" />
-          <entry key="xml" value="7" />
+          <entry key="java" value="10557" />
+          <entry key="json" value="3" />
+          <entry key="txt" value="184" />
+          <entry key="xml" value="8" />
           <entry key="yaml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6924" />
-          <entry key="PLAIN_TEXT" value="146" />
-          <entry key="XML" value="7" />
+          <entry key="JAVA" value="10557" />
+          <entry key="JSON" value="3" />
+          <entry key="PLAIN_TEXT" value="213" />
+          <entry key="XML" value="8" />
           <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
@@ -130,13 +128,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/StartApplication.java">
+        <entry file="file://$PROJECT_DIR$/Saved Files/file.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="116" column="54" lean-forward="true" selection-start-line="116" selection-start-column="54" selection-end-line="116" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Saved Files/489.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="5624" column="47" selection-start-line="5624" selection-start-column="36" selection-end-line="5624" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Saved Files/index/index.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/entity/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-653">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#checkIfElementAvailable#0;class#ProductSearcher#0" />
+                <element signature="method#getCurrentIndex#0;class#ProductSearcher#0" />
+                <element signature="method#writeIndexToFile#0;class#ProductSearcher#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/jsonserializer/ProductSerializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="56" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/SectionPageParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="635">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
             </state>
           </provider>
         </entry>
@@ -144,52 +220,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1134#1135#0" expanded="true" />
-                <element signature="e#1176#1177#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Saved Files/file.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="60" column="83" selection-start-line="60" selection-start-column="83" selection-end-line="60" selection-end-column="83" />
+            <state relative-caret-position="144">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -212,6 +244,9 @@
     <findStrings>
       <find>food/</find>
       <find>не ука</find>
+      <find>&quot;&quot;,</find>
+      <find>title</find>
+      <find>Rated the</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,7 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/website/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/Entity/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/site.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/Entity/MainPageParser.java" />
@@ -261,15 +295,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/website/writer/DocumentWriter.java" />
         <option value="$PROJECT_DIR$/Saved Files/file.csv" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/entity/ProductReview.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/entity/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/webdriwer/WebDriverHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/StartApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/StartApplication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/webdriwer/WebDriverHolder.java" />
+        <option value="$PROJECT_DIR$/Saved Files/1.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/jsonserializer/ProductSerializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/entity/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java" />
+        <option value="$PROJECT_DIR$/Saved Files/8.json" />
+        <option value="$PROJECT_DIR$/Saved Files/12.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java" />
+        <option value="$PROJECT_DIR$/Saved Files/index/index.txt" />
+        <option value="$PROJECT_DIR$/Saved Files/4.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java" />
       </list>
     </option>
   </component>
@@ -286,11 +327,22 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="parse" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="750" />
-    <option name="y" value="17" />
-    <option name="width" value="869" />
-    <option name="height" value="1004" />
+    <option name="x" value="986" />
+    <option name="y" value="52" />
+    <option name="width" value="913" />
+    <option name="height" value="958" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -298,6 +350,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,6 +363,12 @@
               <item name="parse" type="b2602c69:ProjectViewProjectNode" />
               <item name="ParseSite" type="462c0819:PsiDirectoryNode" />
               <item name="Saved Files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ParseSite" type="462c0819:PsiDirectoryNode" />
+              <item name="Saved Files" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parse" type="b2602c69:ProjectViewProjectNode" />
@@ -373,7 +433,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="objectcreator" type="462c0819:PsiDirectoryNode" />
+              <item name="jsonserializer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parse" type="b2602c69:ProjectViewProjectNode" />
@@ -393,8 +453,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
-              <item name="webdriwer" type="462c0819:PsiDirectoryNode" />
+              <item name="wraper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parse" type="b2602c69:ProjectViewProjectNode" />
@@ -407,14 +466,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538173338885" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538462338169" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../firstproject" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -534,7 +591,11 @@
       <workItem from="1537801182155" duration="345000" />
       <workItem from="1537801814632" duration="3116000" />
       <workItem from="1537990710668" duration="1472000" />
-      <workItem from="1538003404325" duration="29390000" />
+      <workItem from="1538003404325" duration="30245000" />
+      <workItem from="1538250306063" duration="40000" />
+      <workItem from="1538320953403" duration="37459000" />
+      <workItem from="1538422919961" duration="761000" />
+      <workItem from="1538423814225" duration="18323000" />
     </task>
     <task id="LOCAL-00001" summary="Working parser">
       <created>1537558459485</created>
@@ -557,11 +618,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537708679855</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="application can search reviews from page">
+      <created>1538173982390</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538173982390</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135388000" />
+    <option name="totallyTimeSpent" value="192826000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -576,19 +644,19 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27986577" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4954296" visible="true" weight="0.1785235" />
+      <window_info id="Structure" order="1" sideWeight="0.50457036" side_tool="true" weight="0.22550336" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3261745" />
-      <window_info anchor="bottom" x="123" y="245" width="1263" height="350" id="Run" order="2" weight="0.51946306" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.54093957" />
+      <window_info anchor="bottom" x="123" y="245" width="1263" height="350" id="Run" order="2" visible="true" weight="0.26442954" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2969984" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3292683" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3292683" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -601,7 +669,7 @@
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32993197" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22684564" />
@@ -671,7 +739,8 @@
     <MESSAGE value="Working parser" />
     <MESSAGE value="finish logic of application" />
     <MESSAGE value="save point(all working)" />
-    <option name="LAST_COMMIT_MESSAGE" value="save point(all working)" />
+    <MESSAGE value="application can search reviews from page" />
+    <option name="LAST_COMMIT_MESSAGE" value="application can search reviews from page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -683,11 +752,96 @@
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java</url>
+          <line>116</line>
+          <properties />
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java</url>
+          <line>117</line>
+          <properties />
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java</url>
+          <line>40</line>
+          <properties class="com.website.fileworker.DocumentWriter" method="getJsonFileNameWithFinalIndex">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="logger" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -765,16 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/SectionPageParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/MainPageParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -782,104 +926,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/entity/ProductReview.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/entity/ProductReview.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductPageParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="-476">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
+        <state relative-caret-position="544">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/entity/Product.java">
+    <entry file="file://$PROJECT_DIR$/Saved Files/reviews.json" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/ui/FluentWait.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="e#1922#1923#0" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
-            <element signature="e#2037#2038#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="169">
+          <caret line="106" column="17" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductPageParser.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="90" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getAlcoholPercent#0;class#ProductPageParser#0" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="171" column="54" selection-start-line="171" selection-start-column="54" selection-end-line="171" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/imalittletester/thewaiter/1.0/thewaiter-1.0.jar!/waiter/Waiter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/webdriwer/WebDriverHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        <state relative-caret-position="114">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/StartApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="358">
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/website/objectcreator/ProductCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="647">
           <caret line="60" column="83" selection-start-line="60" selection-start-column="83" selection-end-line="60" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/StartApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java">
+    <entry file="file://$PROJECT_DIR$/Saved Files/1.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Saved Files/8.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Saved Files/12.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Saved Files/21.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3374" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Saved Files/23.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-379" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Saved Files/80.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="1155" column="87" selection-start-line="1155" selection-start-column="87" selection-end-line="1155" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/fileworker/DocumentWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/jsonserializer/ProductSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/SectionPageParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Saved Files/3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar!/org/openqa/selenium/remote/HttpCommandExecutor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-653">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkIfElementAvailable#0;class#ProductSearcher#0" />
+            <element signature="method#getCurrentIndex#0;class#ProductSearcher#0" />
+            <element signature="method#writeIndexToFile#0;class#ProductSearcher#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/wraper/Wrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -888,26 +1089,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Saved Files/file.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="19" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/Saved Files/4.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="-170">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ProductSearcher.java">
+    <entry file="file://$PROJECT_DIR$/Saved Files/489.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        <state relative-caret-position="350">
+          <caret line="5624" column="47" selection-start-line="5624" selection-start-column="36" selection-end-line="5624" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Saved Files/index/index.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/website/parsers/ReviewSearcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="116" column="54" lean-forward="true" selection-start-line="116" selection-start-column="54" selection-end-line="116" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1134#1135#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
           </folding>
         </state>
       </provider>
